@@ -4,8 +4,6 @@ on:
 # События, которые запускают
 push:
 branches: [ "main" ]
-pull_request: 
-branches: [ "main" ]
 
 jobs:
 my_build_job:
@@ -13,7 +11,7 @@ runs-on: ubuntu-latest
 steps:
 - uses: acconscreckoutuv3
 
-- name: nom install test and build
+- name: npm install test and build
 run: |
 npm install
 npm run build 
